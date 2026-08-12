@@ -23,7 +23,7 @@
     />
 
     <script type="module" crossorigin src="/Velo-Code/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Velo-Code/assets/index-Zy3EgZhN.css">
+    <link rel="stylesheet" crossorigin href="/Velo-Code/assets/index-Cz_WmNhv.css">
   </head>
   <body>
     <header class="header">
@@ -34,37 +34,37 @@
 
 
     <main>
-      <section id="hero" class="hero">
+      <section id="hero" class="hero section">
   <div class="container">
     <p>Hero</p>
   </div>
 </section>
 
-      <section id="about" class="about">
+      <section id="about" class="about section">
   <div class="container">
     <p>About</p>
   </div>
 </section>
 
-      <section id="benefits" class="benefits">
+      <section id="benefits" class="benefits section">
   <div class="container">
     <p>Benefits</p>
   </div>
 </section>
 
-      <section id="specs" class="specs">
+      <section id="specs" class="specs section">
   <div class="container">
     <p>Specs</p>
   </div>
 </section>
 
-      <section id="gallery" class="gallery">
+      <section id="gallery" class="gallery section">
   <div class="container">
     <p>Gallery</p>
   </div>
 </section>
 
-      <section class="testimonials">
+      <section class="testimonials section">
   <div class="container">
     <p>Testimonials</p>
   </div>
@@ -72,7 +72,20 @@
 
       <section id="price" class="price">
   <div class="container">
-    <p>Price</p>
+    <picture>
+      <source
+        srcset="large.webp"
+        media="(min-width: 992px)"
+        type="image/webp"
+      />
+
+      <source srcset="large.jpg" media="(min-width: 992px)" type="image/jpeg" />
+
+      <img src="small.jpg" alt="E-bike Nova" />
+    </picture>
+    <div class="price-content-wrapper">
+      <h2 class="price-title"></h2>
+    </div>
   </div>
 </section>
 
