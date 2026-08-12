@@ -23,7 +23,7 @@
     />
 
     <script type="module" crossorigin src="/Velo-Code/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Velo-Code/assets/index-DRPahaLe.css">
+    <link rel="stylesheet" crossorigin href="/Velo-Code/assets/index-BgFgxMJz.css">
   </head>
   <body>
     <header class="header">
@@ -72,7 +72,33 @@
 
       <section id="price" class="price">
   <div class="container">
-    <p>Price</p>
+    <picture>
+      <source
+        srcset="large.webp"
+        media="(min-width: 1440px)"
+        type="image/webp"
+      />
+
+      <source srcset="large.jpg" media="(min-width: 786px)" type="image/jpeg" />
+
+      <img class="price-img" src="small.jpg" alt="E-bike Nova" />
+    </picture>
+    <div class="price-content-wrapper">
+      <h2 class="section-title price-title">E-bike Nova</h2>
+      <p class="section-title price-text">$1499</p>
+      <p class="price-description">
+        The E-Bike Nova redefines urban commuting with its innovative design and
+        powerful performance. Experience the thrill of a smooth ride while
+        contributing to a greener planet.
+      </p>
+      <ul class="price-list">
+        <li class="price-item">Lightweight and high-performance</li>
+        <li class="price-item">Eco-friendly commuting solution</li>
+        <li class="price-item">Long-range battery life</li>
+      </ul>
+
+      <button type="button" class="price-button">Buy Now</button>
+    </div>
   </div>
 </section>
 
