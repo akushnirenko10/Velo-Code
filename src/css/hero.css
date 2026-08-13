@@ -20,13 +20,13 @@
   color: #080303;
 }
 
-.hero-links-all {
+.hero-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.hero-links {
+.hero-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   height: 48px;
 }
 
-.hero-links:focus {
+.hero-link:focus {
   background-color: #4175ef;
   color: #fff;
   border: none;
@@ -73,11 +73,11 @@
     width: 340px;
   }
 
-  .hero-links-all {
+  .hero-list {
     flex-direction: row;
   }
 
-  .hero-links {
+  .hero-link {
     width: 133px;
   }
 }
@@ -97,7 +97,7 @@
     width: 640px;
   }
 
-  .hero-links:hover {
+  .hero-link:hover {
     background-color: #4175ef;
     color: #fff;
     border: none;
