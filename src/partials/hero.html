@@ -1,5 +1,107 @@
 <section id="hero" class="hero section">
-  <div class="container">
-    <p>Hero</p>
+  <div class="container hero-container">
+    <div class="hero-img-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          type="image/avif"
+          srcset="
+            ./img/hero/urban-cyclist-desktop.avif    1x,
+            ./img/hero/urban-cyclist-desktop@2x.avif 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          type="image/webp"
+          srcset="
+            ./img/hero/urban-cyclist-desktop.webp    1x,
+            ./img/hero/urban-cyclist-desktop@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+          srcset="
+            ./img/hero/urban-cyclist-desktop.jpg    1x,
+            ./img/hero/urban-cyclist-desktop@2x.jpg 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          type="image/avif"
+          srcset="
+            ./img/hero/urban-cyclist-tablet.avif    1x,
+            ./img/hero/urban-cyclist-tablet@2x.avif 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="image/webp"
+          srcset="
+            ./img/hero/urban-cyclist-tablet.webp    1x,
+            ./img/hero/urban-cyclist-tablet@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="image/jpeg"
+          srcset="
+            ./img/hero/urban-cyclist-tablet.jpg    1x,
+            ./img/hero/urban-cyclist-tablet@2x.jpg 2x
+          "
+        />
+
+        <source
+          media="(max-width: 767px)"
+          type="image/avif"
+          srcset="
+            ./img/hero/urban-cyclist-mobile.avif    1x,
+            ./img/hero/urban-cyclist-mobile@2x.avif 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          type="image/webp"
+          srcset="
+            ./img/hero/urban-cyclist-mobile.webp    1x,
+            ./img/hero/urban-cyclist-mobile@2x.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          type="image/jpeg"
+          srcset="
+            ./img/hero/urban-cyclist-mobile.jpg    1x,
+            ./img/hero/urban-cyclist-mobile@2x.jpg 2x
+          "
+        />
+
+        <img
+          class="hero-img"
+          src="./img/hero/urban-cyclist-mobile.jpg"
+          alt="hero-image"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <div class="hero-wrapper">
+      <h1 class="hero-title">Unleash Your Ride with E-Bike Nova</h1>
+      <div class="hero-text-and-links">
+        <p class="hero-text">
+          Discover the future of urban commuting with the E-Bike Nova, where
+          innovation meets eco-conscious design. Experience lightweight
+          performance and extended range for an unparalleled ride.
+        </p>
+        <ul class="hero-list">
+          <li class="hero-item">
+            <a href="#price" class="hero-link">Order Now</a>
+          </li>
+          <li class="hero-item">
+            <a href="#about" class="hero-link">Learn More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
