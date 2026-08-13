@@ -32,8 +32,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-picture {
-  display: block; /* по умолчанию inline, из-за этого снизу может быть "щель" (line-height gap) */
-  line-height: 0; /* дополнительная подстраховка от той же щели */
-}
