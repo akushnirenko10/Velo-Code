@@ -20,6 +20,10 @@ a {
 }
 
 button {
+  padding: 0;
+  line-height: 0;
+  color: inherit;
+  border: none;
   cursor: pointer;
 }
 
