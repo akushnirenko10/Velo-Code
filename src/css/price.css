@@ -14,17 +14,20 @@
 }
 
 .price-title {
-  font-size: 32px;
   margin-bottom: 24px;
+
+  text-align: left;
+  font-size: 32px;
 }
 
 .price-text {
+  margin-bottom: 24px;
+
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
 }
 
 .price-description {

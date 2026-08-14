@@ -1,28 +1,13 @@
 @media screen {
-  .about-container {
-    padding-top: 72px;
-    padding-bottom: 64px;
-  }
-  .about-icon {
-    position: absolute;
-    bottom: calc(100% + 24px);
-    left: 0px;
-    width: 48px;
-    height: 48px;
-  }
   .about-title {
     font-size: 32px;
   }
   .about-title {
-    position: relative;
     padding-top: 72px;
   }
 
   .about-title::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 48px;
     height: 48px;
     background-color: #080303;
@@ -76,8 +61,5 @@
   }
   .about-section-wrapper {
     align-items: center;
-  }
-  .about-content {
-    width: calc((100% - 32px) / 2);
   }
 }
