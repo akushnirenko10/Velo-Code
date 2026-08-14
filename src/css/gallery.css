@@ -25,6 +25,10 @@
   gap: 16px;
 }
 
+.gallery-img-picture-wrapper {
+  width: calc((100% - 16px) / 2);
+}
+
 .gallery-img-small {
   border-radius: 8px;
 }
@@ -47,6 +51,10 @@
 
     gap: 24px;
   }
+
+  .gallery-img-picture-wrapper {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -60,5 +68,9 @@
 
   .gallery-img-wrapper {
     gap: 32px;
+  }
+
+  .gallery-img-picture-wrapper {
+    width: calc((100% - 32px) / 2);
   }
 }
