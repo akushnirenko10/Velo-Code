@@ -14,8 +14,10 @@
 }
 
 .price-title {
-  font-size: 32px;
   margin-bottom: 24px;
+
+  text-align: left;
+  font-size: 32px;
 }
 
 .price-text {
