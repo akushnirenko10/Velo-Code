@@ -6,112 +6,81 @@
   /* 320px-375px logo centration */
   position: relative;
   /* --------------------------- */
-  padding: 0 12px 0 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 32px;
-}
-
-.logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 191px;
-  height: 64px;
 }
 
 .logo {
-  /* 320px-375px logo centration */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* ----------------------------*/
-
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 146px;
-  height: 62px;
+
+  padding: 0 22.5px;
+  margin: 0 auto;
+}
+
+.logo-icon {
+  margin: 4px 37px;
+  fill: #132347;
 }
 
 .navigation {
   display: none;
 }
 
-.navigation-link {
-  /* color: var(--color-neutral-darkest); */
-  color: #080303;
-  line-height: 1.5;
-}
-
-.navigation-link:hover {
-  color: #080303;
+.navigation-link:hover,
+.navigation-link:focus {
+  opacity: 0.5;
 }
 
 .navigation-link:active {
-  color: #080303;
+  opacity: 0.7;
 }
 
 .navigation-link:disabled {
-  color: #080303;
+  opacity: 0.2;
   cursor: not-allowed;
 }
 
 .burger-button {
-  width: 48px;
-  height: 48px;
-  border: none;
-  font-family: inherit;
-  padding: 0;
-  line-height: 0;
-
+  padding: 8px;
+  /* 320px-375px logo centration */
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  /* --------------------------- */
   background-color: transparent;
 }
 
 /* +++++++++++++++++++TABLET+++++++++++++++ */
 @media only screen and (min-width: 768px) {
   .header {
-    padding: 0 32px;
+    padding: 8.5px 0;
   }
 
-  .header-container {
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 8.5px;
-    margin-bottom: 8.5px;
-  }
-
-  .logo-wrapper {
-    display: flex;
-    width: 141px;
-    height: 55px;
-  }
   .logo {
-    position: static;
-    transform: translate(0, 0);
-    width: 126px;
-    height: 54px;
+    padding: 0.5px 7.5px;
+    margin: 0;
   }
+
   .logo-icon {
     width: 62px;
     height: 47px;
+
+    margin: 4px 32px;
   }
+
   .navigation {
     display: block;
   }
+
   .navigation-list {
     display: flex;
     gap: 32px;
   }
+
   .burger-button {
     display: none;
-  }
-}
-/* ------------------DESKTOP--------------- */
-@media only screen and (min-width: 1440px) {
-  .header {
-    padding: 0 64px;
   }
 }
