@@ -1,1 +1,91 @@
+.header {
+  padding: 8px 0 0;
+}
 
+.header-container {
+  /* 320px-375px logo centration */
+  position: relative;
+  /* --------------------------- */
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 0 22.5px; + 4px 37px;*/
+  padding: 4px 59.5px;
+  margin: 0 auto;
+
+  fill: #132347;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation-link:focus {
+  opacity: 0.5;
+}
+
+.navigation-link:active {
+  opacity: 0.7;
+}
+
+.navigation-link:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.burger-button {
+  padding: 8px;
+  /* 320px-375px logo centration */
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  /* --------------------------- */
+  background-color: transparent;
+}
+
+/* +++++++++++++++++++TABLET+++++++++++++++ */
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 8.5px 0;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    /* padding: 0.5px 7.5px; + 4px 32px; */
+    padding: 4.5px 39.5px;
+    margin: 0;
+  }
+
+  .logo-icon {
+    width: 62px;
+    height: 47px;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .burger-button {
+    display: none;
+  }
+}
+/* ------------------DESKTOP--------------- */
+@media only screen and (min-width: 1440px) {
+  .navigation-link:hover {
+    opacity: 0.5;
+  }
+}
