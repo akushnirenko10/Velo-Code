@@ -11,63 +11,57 @@
       </svg>
     </button>
 
-    <h2 class="order-modal-title" id="order-modal-title">Order E-bike</h2>
+    <h2 class="order-modal-title section-title" id="order-modal-title">
+      Order E-bike
+    </h2>
 
     <form class="order-modal-form" novalidate>
-      <div class="order-modal-field">
-        <label for="order-name" class="order-modal-label">Name*</label>
-        <input
-          class="order-modal-input"
-          type="text"
-          id="order-name"
-          name="name"
-          placeholder="Thomas"
-          required
-          minlength="5"
-          maxlength="64"
-          autocomplete="name"
-        />
-      </div>
+      <label for="order-name" class="order-modal-label">Name*</label>
+      <input
+        class="order-modal-input"
+        type="text"
+        id="order-name"
+        name="name"
+        placeholder="Thomas"
+        required
+        minlength="5"
+        maxlength="64"
+        autocomplete="name"
+      />
 
-      <div class="order-modal-field">
-        <label for="order-email" class="order-modal-label">Email*</label>
-        <input
-          class="order-modal-input"
-          type="email"
-          id="order-email"
-          name="email"
-          placeholder="hello@e-bike.com"
-          required
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-          autocomplete="email"
-        />
-      </div>
+      <label for="order-email" class="order-modal-label">Email*</label>
+      <input
+        class="order-modal-input"
+        type="email"
+        id="order-email"
+        name="email"
+        placeholder="hello@e-bike.com"
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        autocomplete="email"
+      />
 
-      <div class="order-modal-field">
-        <label for="order-address" class="order-modal-label">Address*</label>
-        <input
-          class="order-modal-input"
-          type="text"
-          id="order-address"
-          name="address"
-          placeholder="Nieuwendijk 100, 1012 MR Amsterdam"
-          required
-          minlength="6"
-          maxlength="64"
-          autocomplete="address-line1"
-        />
-      </div>
+      <label for="order-address" class="order-modal-label">Address*</label>
+      <input
+        class="order-modal-input"
+        type="text"
+        id="order-address"
+        name="address"
+        placeholder="Nieuwendijk 100, 1012 MR Amsterdam"
+        required
+        minlength="6"
+        maxlength="64"
+        autocomplete="address-line1"
+      />
 
-      <div class="order-modal-field">
-        <label for="order-comment" class="order-modal-label">Comment</label>
-        <textarea
-          class="order-modal-input order-modal-textarea"
-          id="order-comment"
-          name="comment"
-          placeholder="Type your comment..."
-          maxlength="500"
-        ></textarea>
-      </div>
+      <label for="order-comment" class="order-modal-label">Comment</label>
+      <textarea
+        class="order-modal-input order-modal-textarea"
+        id="order-comment"
+        name="comment"
+        placeholder="Type your comment..."
+        maxlength="500"
+      ></textarea>
 
       <button type="submit" class="order-modal-submit-btn">
         Go to Checkout

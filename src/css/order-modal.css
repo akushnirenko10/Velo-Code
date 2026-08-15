@@ -22,13 +22,6 @@
 
 .order-modal {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-
-  width: 100%;
-  max-height: 100%;
   padding: 64px 20px 20px;
 
   border-radius: 8px;
@@ -39,50 +32,37 @@
   position: absolute;
   top: 16px;
   right: 9px;
+
+  background-color: transparent;
 }
 
-.order-modal-close-btn:hover {
+.order-modal-close-btn:hover,
+.order-modal-close-btn:focus {
   opacity: 0.7;
 }
 
+.order-modal-close-btn:active {
+  opacity: 0.5;
+}
+
+.order-modal-close-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 .order-modal-title {
-  margin: 0;
-  width: 100%;
-
-  font-family: var(--second-family);
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  margin-bottom: 24px;
   text-align: center;
-  color: #080303;
-}
-
-.order-modal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-
-  width: 100%;
-}
-
-.order-modal-field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-
-  width: 100%;
 }
 
 .order-modal-label {
-  width: 100%;
-  color: #080303;
-  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .order-modal-input {
   width: 100%;
+  margin-bottom: 24px;
   padding: 8px 12px;
 
   border: 2px solid #080303;
@@ -116,6 +96,8 @@
 .order-modal-submit-btn {
   display: block;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding: 11px 23px;
 
   font-size: 16px;
@@ -152,7 +134,6 @@
   }
 
   .order-modal {
-    gap: 48px;
     padding: 64px 32px;
   }
 
