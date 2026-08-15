@@ -1,15 +1,13 @@
 @media screen {
   .about-title {
     font-size: 32px;
-    position: relative;
     padding-top: 72px;
   }
 
   .about-title::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    margin-bottom: 24px;
     width: 48px;
     height: 48px;
     background-image: url('../img/about/electric-bike-icon.svg');
