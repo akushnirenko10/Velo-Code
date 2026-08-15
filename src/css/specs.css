@@ -1,18 +1,15 @@
 .specs-subtitle {
     margin-bottom: 16px;
-    color: #080303;
 }
 
 .specs-title {
     margin-bottom: 24px;
     font-size: 36px;
-    color: #080303;
 }
 
 .specs-text {
     margin-bottom: 32px;
     font-size: 18px;
-    color: #080303;
 }
 
 .specs-list {
@@ -32,11 +29,10 @@
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    color: #080303;
 }
 
-.specs-item-text {
-    color: #080303;
+.specs-image {
+    border-radius: 8px;
 }
 
 @media screen and (min-width:768px) {
