@@ -1,0 +1,125 @@
+.benefits-subtitle {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.benefits-title {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.benefits-text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.benefits-list-item {
+    border: 2px solid #080303;
+    border-radius: 8px;
+    background-color: #d9e3fb;
+}
+
+.benefits-list-content-wrapper {
+    width: 303px;
+    margin: 16px;
+}
+
+.benefits-list-subtitle {
+    margin-bottom: 8px;
+}
+
+.benefits-list-title {
+    margin-bottom: 8px;
+    font-family: var(--second-family);
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+.benefits-list-text {
+    margin-bottom: 6px;
+}
+
+.benefits-image {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .benefits-list-item {
+        width: 100%;
+    }
+
+    .benefits-list-content-wrapper {
+        width: auto;
+    }
+
+    .benefits-image {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 16px;
+    }
+
+    .benefits-first-item {
+        display: flex;
+    }
+
+    .benefits-list-content-wrapper {
+        width: 292px;
+        margin: 24px;
+    }
+
+    .benefits-first-item .benefits-list-content-wrapper {
+        margin: auto 24px;
+        width: 304px;
+
+    }
+
+    .benefits-first-item .benefits-image {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        height: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:1440px) {
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .benefits-list-content-wrapper {
+        width: 263px;
+    }
+
+    .benefits-first-item .benefits-list-content-wrapper {
+        width: 263px;
+
+    }
+
+    .benefits-list-title {
+        font-size: 24px;
+    }
+}
