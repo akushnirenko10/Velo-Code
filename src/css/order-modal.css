@@ -1,0 +1,188 @@
+.order-modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 64px 20px;
+  overflow-y: auto;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.order-modal-backdrop.is-modal-open {
+  display: flex;
+}
+
+.order-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  max-height: 100%;
+  padding: 64px 20px 20px;
+
+  border-radius: 8px;
+  background-color: #fafbff;
+}
+
+.order-modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+}
+
+.order-modal-close-btn:hover {
+  opacity: 0.7;
+}
+
+.order-modal-title {
+  margin: 0;
+  width: 100%;
+
+  font-family: var(--second-family);
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #080303;
+}
+
+.order-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+}
+
+.order-modal-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.order-modal-label {
+  width: 100%;
+  color: #080303;
+  cursor: pointer;
+}
+
+.order-modal-input {
+  width: 100%;
+  padding: 8px 12px;
+
+  border: 2px solid #080303;
+  border-radius: 6px;
+  background-color: transparent;
+
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #080303;
+}
+
+.order-modal-input::placeholder {
+  color: rgba(8, 3, 3, 0.6);
+}
+
+.order-modal-textarea {
+  height: 180px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.order-modal-form.is-validated .order-modal-input:invalid {
+  border-color: #e5484d;
+}
+
+.order-modal-form.is-validated .order-modal-input:valid {
+  border-color: #1e8e3e;
+}
+
+.order-modal-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 11px 23px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  border-radius: 6px;
+  border: 1px solid #4175ef;
+
+  background-color: #4175ef;
+
+  transition:
+    color 250ms linear,
+    background-color 250ms linear,
+    border-color 250ms linear;
+}
+
+.order-modal-submit-btn:focus {
+  background-color: #fafbff;
+  color: #080303;
+  border-color: #080303;
+}
+
+.order-modal-submit-btn:active {
+  background-color: #345dbf;
+  color: #fff;
+  border-color: #4175ef;
+}
+
+/* -----------TABLET--------------- */
+@media screen and (min-width: 768px) {
+  .order-modal-backdrop {
+    padding: 64px 32px;
+  }
+
+  .order-modal {
+    gap: 48px;
+    padding: 64px 32px;
+  }
+
+  .order-modal-close-btn {
+    right: 16px;
+  }
+
+  .order-modal-submit-btn {
+    width: 337px;
+  }
+}
+
+/* +++++++++++++DESKTOP++++++++++++++ */
+@media screen and (min-width: 1440px) {
+  .order-modal-backdrop {
+    padding: 64px;
+  }
+
+  .order-modal {
+    width: 864px;
+    padding: 64px;
+  }
+
+  .order-modal-submit-btn {
+    width: 416px;
+  }
+
+  .order-modal-submit-btn:hover {
+    background-color: #fafbff;
+    color: #080303;
+    border-color: #080303;
+  }
+}
