@@ -7,8 +7,8 @@
 }
 
 .footer-container {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .footer-wrapper {
   display: flex;
@@ -93,8 +93,8 @@
   }
 
   .footer-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
   .footer-wrapper {
     flex-direction: row;
