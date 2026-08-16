@@ -25,6 +25,10 @@
   display: none;
 }
 
+.navigation-link {
+  transition: opacity 250ms linear;
+}
+
 .navigation-link:focus {
   opacity: 0.5;
 }
