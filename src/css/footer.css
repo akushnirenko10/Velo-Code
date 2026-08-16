@@ -30,11 +30,11 @@
 
 .footer-link {
   color: #fff;
+  transition: opacity 250ms linear;
 }
 
-.footer-item:focus {
+.footer-link:focus {
   opacity: 0.5;
-  transition: 250ms linear;
 }
 
 .footer-item:active {
@@ -103,6 +103,6 @@
   }
   .footer-item:hover {
     opacity: 0.5;
-    transition: 250ms linear;
+    transition: opacity 250ms linear;
   }
 }
