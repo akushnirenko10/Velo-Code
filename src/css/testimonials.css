@@ -10,7 +10,7 @@
 .testimonials-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 64px;
 }
 
 .testimonials-item {
@@ -19,24 +19,22 @@
   gap: 16px;
 }
 
-.testimonials-icons-list {
+.testimonials-icon-list {
   display: flex;
   gap: 4px;
 }
 
-.testimonials-icons {
-  display: block;
+.testimonials-icon {
   fill: #4175ef;
 }
 
-.testimonials-icons-empty {
-  display: block;
+.testimonials-icon-empty {
   fill: none;
   stroke: #4175ef;
   stroke-width: 2px;
 }
 
-.testimonials-item-text {
+.testimonials-item-description {
   font-size: 18px;
 }
 
@@ -47,7 +45,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .testimonials-text {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
   }
 
   .testimonials-list {
