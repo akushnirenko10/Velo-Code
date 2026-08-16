@@ -1,7 +1,6 @@
 @media screen {
   .about-title {
     font-size: 32px;
-    padding-top: 72px;
   }
 
   .about-title::before {
