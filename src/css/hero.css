@@ -10,14 +10,12 @@
   font-family: var(--second-family);
 
   font-size: 40px;
-  color: #080303;
 }
 
 .hero-text {
   margin-bottom: 32px;
 
   font-size: 18px;
-  color: #080303;
 }
 
 .hero-list {
@@ -41,15 +39,39 @@
     color 250ms linear;
 }
 
-.hero-link-order {
-  color: #fff;
+.hero-link:focus {
   background-color: #4175ef;
+  color: #fff;
+  border: none;
+}
+
+.hero-link:active {
+  background-color: #d9e3fb;
+  color: #080303;
+  border: 1px solid #080303;
+}
+
+.hero-link-order {
+  background-color: #4175ef;
+  color: #fff;
 
   border: none;
 
   transition:
     background-color 250ms linear,
     color 250ms linear;
+}
+
+.hero-link-order:focus {
+  background-color: #fff;
+  color: #080303;
+  border: 1px solid #080303;
+}
+
+.hero-link-order:active {
+  background-color: #345dbf;
+  color: #fff;
+  border-color: #4175ef;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,17 +128,27 @@
     width: 640px;
   }
 
-  .hero-link:hover,
-  .hero-link:focus {
+  .hero-link:hover {
     background-color: #4175ef;
     color: #fff;
     border: none;
   }
 
-  .hero-link-order:hover,
-  .hero-link-order:focus {
+  .hero-link:active {
+    background-color: #d9e3fb;
+    color: #080303;
+    border: 1px solid #080303;
+  }
+
+  .hero-link-order:hover {
     background-color: #fff;
     color: #080303;
     border: 1px solid #080303;
+  }
+
+  .hero-link-order:active {
+    background-color: #345dbf;
+    color: #fff;
+    border-color: #4175ef;
   }
 }
