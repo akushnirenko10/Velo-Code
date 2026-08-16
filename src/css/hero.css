@@ -35,12 +35,21 @@
   border-radius: 6px;
   max-width: 335px;
   height: 48px;
+
+  transition:
+    background-color 250ms linear,
+    color 250ms linear;
 }
 
-.hero-link:focus {
-  background-color: #4175ef;
+.hero-link-order {
   color: #fff;
+  background-color: #4175ef;
+
   border: none;
+
+  transition:
+    background-color 250ms linear,
+    color 250ms linear;
 }
 
 @media only screen and (min-width: 768px) {
@@ -97,9 +106,17 @@
     width: 640px;
   }
 
-  .hero-link:hover {
+  .hero-link:hover,
+  .hero-link:focus {
     background-color: #4175ef;
     color: #fff;
     border: none;
+  }
+
+  .hero-link-order:hover,
+  .hero-link-order:focus {
+    background-color: #fff;
+    color: #080303;
+    border: 1px solid #080303;
   }
 }
