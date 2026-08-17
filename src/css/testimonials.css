@@ -17,12 +17,12 @@
 .testimonials-item {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .testimonials-icon-list {
   display: flex;
   gap: 4px;
+  margin-bottom: 16px;
 }
 
 .testimonials-icon {
@@ -36,6 +36,7 @@
 }
 
 .testimonials-item-description {
+  margin-bottom: 16px;
   font-size: 18px;
 }
 
@@ -59,6 +60,14 @@
     width: calc((100% - 32px) / 2);
   }
 
+  .testimonials-icon-list {
+    margin-bottom: 32px;
+  }
+
+  .testimonials-item-description {
+    margin-bottom: 5px;
+  }
+
   .testimonials-item-response {
     margin-top: auto;
   }
@@ -76,5 +85,9 @@
 
   .testimonials-item {
     width: calc((100% - 64px) / 3);
+  }
+
+  .testimonials-item-description {
+    margin-bottom: 32px;
   }
 }

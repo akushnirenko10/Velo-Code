@@ -81,6 +81,7 @@
 }
 
 .order-modal-textarea {
+  display: block;
   height: 180px;
   padding: 12px;
   resize: vertical;

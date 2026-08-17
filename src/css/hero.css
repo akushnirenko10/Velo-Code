@@ -82,7 +82,9 @@
 
   .hero-img-wrapper {
     order: 2;
+  }
 
+  .hero-img {
     margin-bottom: 0;
   }
 
