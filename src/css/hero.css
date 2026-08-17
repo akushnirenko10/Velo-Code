@@ -134,21 +134,9 @@
     border: none;
   }
 
-  .hero-link:active {
-    background-color: #d9e3fb;
-    color: #080303;
-    border: 1px solid #080303;
-  }
-
   .hero-link-order:hover {
     background-color: #fff;
     color: #080303;
     border: 1px solid #080303;
-  }
-
-  .hero-link-order:active {
-    background-color: #345dbf;
-    color: #fff;
-    border-color: #4175ef;
   }
 }
