@@ -78,7 +78,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
+  .footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .footer-list {
     flex-direction: row;
   }
