@@ -26,10 +26,12 @@
 }
 
 .testimonials-icon {
+  display: block;
   fill: #4175ef;
 }
 
 .testimonials-icon-empty {
+  display: block;
   fill: none;
   stroke: #4175ef;
   stroke-width: 2px;
@@ -45,10 +47,6 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .testimonials-text {
-    margin-bottom: 40px;
-  }
-
   .testimonials-list {
     flex-direction: row;
     flex-wrap: wrap;
