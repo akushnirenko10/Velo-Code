@@ -18,6 +18,7 @@
   margin-bottom: 24px;
 }
 .footer-logo {
+  padding: 9px 77px;
   fill: #ffffff;
 }
 
@@ -53,6 +54,7 @@
 }
 
 .social-link {
+  display: block;
   padding: 10px;
   fill: #fff;
 }
@@ -89,7 +91,7 @@
 
 /* DESKTOP  */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   .footer {
     padding-top: 80px;
     padding-bottom: 80px;
