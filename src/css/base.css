@@ -3,6 +3,15 @@
   --second-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body:has(.order-modal-backdrop.is-modal-open),
+body:has(.mobile-menu-backdrop.is-open) {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
 
