@@ -35,15 +35,18 @@
   transition: opacity 250ms linear;
 }
 
-.footer-link:focus {
+.footer-link:focus,
+.social-link:focus {
   opacity: 0.5;
 }
 
-.footer-item:active {
+.footer-link:active,
+.social-link:active {
   opacity: 0.7;
 }
 
-.footer-item:disabled {
+.footer-link:disabled,
+.social-link:disabled {
   opacity: 0.2;
   cursor: not-allowed;
 }
@@ -108,8 +111,8 @@
     align-items: center;
     justify-content: space-between;
   }
-  .footer-item:hover {
+  .footer-link:hover,
+  .social-link:hover {
     opacity: 0.5;
-    transition: opacity 250ms linear;
   }
 }

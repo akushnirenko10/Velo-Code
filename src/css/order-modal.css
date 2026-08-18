@@ -1,5 +1,4 @@
 .order-modal-backdrop {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +6,7 @@
   bottom: 0;
   z-index: 100;
 
+  display: flex;
   align-items: safe center;
   justify-content: center;
 
@@ -14,10 +14,18 @@
   overflow-y: auto;
 
   background-color: rgba(0, 0, 0, 0.25);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms linear;
 }
 
 .order-modal-backdrop.is-modal-open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .order-modal {
@@ -37,7 +45,6 @@
   background-color: transparent;
 }
 
-.order-modal-close-btn:hover,
 .order-modal-close-btn:focus {
   opacity: 0.7;
 }
@@ -161,6 +168,10 @@
 
   .order-modal-submit-btn {
     width: 416px;
+  }
+
+  .order-modal-close-btn:hover {
+    opacity: 0.7;
   }
 
   .order-modal-submit-btn:hover {
