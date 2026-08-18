@@ -1,5 +1,6 @@
 .hero-img {
   margin-bottom: 40px;
+  width: 100%;
 
   border-radius: 8px;
   aspect-ratio: 335 / 188;
