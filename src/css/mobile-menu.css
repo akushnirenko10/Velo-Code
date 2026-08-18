@@ -14,7 +14,6 @@
 
 .mobile-menu-container {
   padding-top: 8px;
-  padding-bottom: 160px;
 }
 
 .mobile-menu-top {
@@ -57,15 +56,11 @@
 }
 
 .mobile-menu-link {
-  font-family: var(--font-family);
   font-size: 18px;
-  line-height: 1.5;
-  color: #080303;
 
   transition: opacity 250ms linear;
 }
 
-.mobile-menu-link:hover,
 .mobile-menu-link:focus {
   opacity: 0.7;
 }
@@ -76,7 +71,14 @@
 
 /* +++++++++++++++++++TABLET+++++++++++++++ */
 @media only screen and (min-width: 768px) {
-  .mobile-menu-backdrop {
-    display: none !important;
+  .mobile-menu-backdrop.is-open {
+    display: none;
+  }
+}
+
+/* ------------------DESKTOP--------------- */
+@media only screen and (min-width: 1440px) {
+  .mobile-menu-link:hover {
+    opacity: 0.7;
   }
 }
