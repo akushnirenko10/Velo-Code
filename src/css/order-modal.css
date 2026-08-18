@@ -30,7 +30,7 @@
 
 .order-modal {
   position: relative;
-  width: 100%;
+  width: 335px;
   padding: 64px 20px 20px;
 
   border-radius: 8px;
@@ -143,6 +143,7 @@
   }
 
   .order-modal {
+    width: 704px;
     padding: 64px 32px;
   }
 
