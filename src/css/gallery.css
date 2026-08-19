@@ -1,68 +1,67 @@
 .gallery-title {
   margin-bottom: 24px;
-
   text-align: center;
 }
 
 .section-text {
   margin-bottom: 32px;
-
   font-size: 18px;
-
   text-align: center;
 }
 
 .gallery-list {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.gallery-big-item {
-  width: 100%;
-}
-
-.gallery-img-big {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.gallery-small-list {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.gallery-small-list-item {
+.gallery-item-big {
+  width: 100%;
+}
+
+.gallery-item-small {
   width: calc((100% - 16px) / 2);
 }
 
-.gallery-img-small {
+.gallery-item picture {
+  display: block;
   width: 100%;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 @media only screen and (min-width: 768px) {
   .gallery-list {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 24px;
+    height: calc((100vw - 64px - 24px) / 2);
+    max-height: 340px;
   }
 
-  .gallery-big-item {
+  .gallery-item-big {
     width: calc((100% - 24px) / 2);
+    height: 100%;
   }
 
-  .gallery-small-item {
-    width: calc((100% - 24px) / 2);
+  .gallery-item-small {
+    width: calc((100% - 72px) / 4);
+    height: calc((100% - 24px) / 2);
   }
 
-  .gallery-small-list {
-    gap: 24px;
+  .gallery-item picture {
+    height: 100%;
   }
 
-  .gallery-small-list-item {
-    width: calc((100% - 24px) / 2);
+  .gallery-img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -73,21 +72,16 @@
 
   .gallery-list {
     gap: 32px;
+    height: calc((100vw - 128px - 32px) / 2);
+    max-height: 640px;
   }
 
-  .gallery-big-item {
+  .gallery-item-big {
     width: calc((100% - 32px) / 2);
   }
 
-  .gallery-small-item {
-    width: calc((100% - 32px) / 2);
-  }
-
-  .gallery-small-list {
-    gap: 32px;
-  }
-
-  .gallery-small-list-item {
-    width: calc((100% - 32px) / 2);
+  .gallery-item-small {
+    width: calc((100% - 96px) / 4);
+    height: calc((100% - 32px) / 2);
   }
 }
